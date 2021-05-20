@@ -99,6 +99,7 @@ div.container a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -139,7 +140,7 @@ div.topBotomBordersOut a:hover:after {
 
 
 /* Hovering over img */
-.container {
+.containers {
   position: relative;
   width: 50%;
 }
@@ -164,11 +165,11 @@ div.topBotomBordersOut a:hover:after {
   text-align: center;
 }
 
-.container:hover .image {
+.containers:hover .image {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.containers:hover .middle {
   opacity: 1;
 }
 
