@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="style2.css" >
+</head>
+
+
+<body>
+  
+  <img src="pics/tipsy_taurus.jpg" alt="Envy Sweets Logo" width="150" height="140" class ="center"> 
+  
+<br>
+
+   <div class="container red topBotomBordersOut" id="stickybar">
+    <a href = "index.html">Home</a>
+    <a href = "drinks.html">Drinks</a>
+    <a>About</a>
+    <a>Contact</a>
+  </div>
+  
+<br>
+<br>
+
+
+<!-- table for pics --> 
+<div class="row">
+  <div class="column container">
+    <img src="pics/bottles.jpg" alt="Snow" style="width:60%" class ="center image">
+    <div class="middle">
+      <div> <!-- where it starts-->
+        <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+  role="link"
+  type="button"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+
+  var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+  checkoutButton.addEventListener('click', function () {
+    /*
+     * When the customer clicks on the button, redirect
+     * them to Checkout.
+     */
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+      mode: 'payment',
+      /*
+       * Do not rely on the redirect to the successUrl for fulfilling
+       * purchases, customers may not always reach the success_url after
+       * a successful payment.
+       * Instead use one of the strategies described in
+       * https://stripe.com/docs/payments/checkout/fulfill-orders
+       */
+      successUrl: 'https://example.com/success',
+      cancelUrl: 'https://example.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        /*
+         * If `redirectToCheckout` fails due to a browser or network
+         * error, display the localized error message to your customer.
+         */
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+</div>
+    </div>
+    <p class="paragraphProducts"> Henny Colada </p>
+    <p class="paragraphProducts" style="font-size:20px">—</p>
+    <p class="paragraphProducts">$30.00</p>
+  </div>
+  <div class="column container">
+    <img src="pics/bottles.jpg" alt="Forest" style="width:60%" class ="center image">
+    <div class="middle">
+      <div><!-- where it starts-->
+        <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+  role="link"
+  type="button"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+
+  var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+  checkoutButton.addEventListener('click', function () {
+    /*
+     * When the customer clicks on the button, redirect
+     * them to Checkout.
+     */
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+      mode: 'payment',
+      /*
+       * Do not rely on the redirect to the successUrl for fulfilling
+       * purchases, customers may not always reach the success_url after
+       * a successful payment.
+       * Instead use one of the strategies described in
+       * https://stripe.com/docs/payments/checkout/fulfill-orders
+       */
+      successUrl: 'https://example.com/success',
+      cancelUrl: 'https://example.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        /*
+         * If `redirectToCheckout` fails due to a browser or network
+         * error, display the localized error message to your customer.
+         */
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+</div>
+    </div>
+    <p class="paragraphProducts">Hulk Smash</p>
+    <p class="paragraphProducts" style="font-size:20px">—</p>
+    <p class="paragraphProducts">$30.00</p>
+  </div>
+</div>
+
+<!-- Row 2 -->
+<div class="row">
+  <div class="column container">
+    <img src="pics/bottles.jpg" alt="Snow" style="width:60%" class ="center image">
+    <div class="middle">
+      <div><!-- where it starts-->
+        <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+  role="link"
+  type="button"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+
+  var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+  checkoutButton.addEventListener('click', function () {
+    /*
+     * When the customer clicks on the button, redirect
+     * them to Checkout.
+     */
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+      mode: 'payment',
+      /*
+       * Do not rely on the redirect to the successUrl for fulfilling
+       * purchases, customers may not always reach the success_url after
+       * a successful payment.
+       * Instead use one of the strategies described in
+       * https://stripe.com/docs/payments/checkout/fulfill-orders
+       */
+      successUrl: 'https://example.com/success',
+      cancelUrl: 'https://example.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        /*
+         * If `redirectToCheckout` fails due to a browser or network
+         * error, display the localized error message to your customer.
+         */
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+</div>
+    </div>
+    <p class="paragraphProducts">Bob Marley</p>
+    <p class="paragraphProducts" style="font-size:20px">—</p>
+    <p class="paragraphProducts">$30.00</p>
+  </div>
+  <div class="column container">
+    <img src="pics/bottles.jpg" alt="Forest" style="width:60%" class ="center image">
+    <div class="middle">
+      <div><!-- where it starts-->
+        <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+  role="link"
+  type="button"
+>
+  Checkout
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+
+  var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+  checkoutButton.addEventListener('click', function () {
+    /*
+     * When the customer clicks on the button, redirect
+     * them to Checkout.
+     */
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+      mode: 'payment',
+      /*
+       * Do not rely on the redirect to the successUrl for fulfilling
+       * purchases, customers may not always reach the success_url after
+       * a successful payment.
+       * Instead use one of the strategies described in
+       * https://stripe.com/docs/payments/checkout/fulfill-orders
+       */
+      successUrl: 'https://example.com/success',
+      cancelUrl: 'https://example.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        /*
+         * If `redirectToCheckout` fails due to a browser or network
+         * error, display the localized error message to your customer.
+         */
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+</div>
+    </div>
+    <p class="paragraphProducts">Booshay Water</p>
+    <p class="paragraphProducts" style="font-size:20px">—</p>
+    <p class="paragraphProducts">$30.00</p>
+  </div>
+</div>
+
+<!-- Row 3 -->
+<div class="row">
+    <div class="column container">
+      <img src="pics/bottles.jpg" alt="Snow" style="width:60%" class ="center image">
+      <div class="middle">
+        <div><!-- where it starts-->
+          <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3"></script>
+  
+  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+  <button
+    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+    id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+    role="link"
+    type="button"
+  >
+    Checkout
+  </button>
+  
+  <div id="error-message"></div>
+  
+  <script>
+  (function() {
+    var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+  
+    var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+    checkoutButton.addEventListener('click', function () {
+      /*
+       * When the customer clicks on the button, redirect
+       * them to Checkout.
+       */
+      stripe.redirectToCheckout({
+        lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+        mode: 'payment',
+        /*
+         * Do not rely on the redirect to the successUrl for fulfilling
+         * purchases, customers may not always reach the success_url after
+         * a successful payment.
+         * Instead use one of the strategies described in
+         * https://stripe.com/docs/payments/checkout/fulfill-orders
+         */
+        successUrl: 'https://example.com/success',
+        cancelUrl: 'https://example.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          /*
+           * If `redirectToCheckout` fails due to a browser or network
+           * error, display the localized error message to your customer.
+           */
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  })();
+  </script>
+  </div>
+      </div>
+      <p class="paragraphProducts">Corona Virus</p>
+      <p class="paragraphProducts" style="font-size:20px">—</p>
+      <p class="paragraphProducts">$30.00</p>
+    </div>
+    <div class="column container">
+      <img src="pics/bottles.jpg" alt="Forest" style="width:60%" class ="center image">
+      <div class="middle">
+        <div><!-- where it starts-->
+          <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3"></script>
+  
+  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+  <button
+    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+    id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+    role="link"
+    type="button"
+  >
+    Checkout
+  </button>
+  
+  <div id="error-message"></div>
+  
+  <script>
+  (function() {
+    var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+  
+    var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+    checkoutButton.addEventListener('click', function () {
+      /*
+       * When the customer clicks on the button, redirect
+       * them to Checkout.
+       */
+      stripe.redirectToCheckout({
+        lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+        mode: 'payment',
+        /*
+         * Do not rely on the redirect to the successUrl for fulfilling
+         * purchases, customers may not always reach the success_url after
+         * a successful payment.
+         * Instead use one of the strategies described in
+         * https://stripe.com/docs/payments/checkout/fulfill-orders
+         */
+        successUrl: 'https://example.com/success',
+        cancelUrl: 'https://example.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          /*
+           * If `redirectToCheckout` fails due to a browser or network
+           * error, display the localized error message to your customer.
+           */
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  })();
+  </script>
+  </div>
+      </div>
+      <p class="paragraphProducts">Powerpuff Girls</p>
+      <p class="paragraphProducts" style="font-size:20px">—</p>
+      <p class="paragraphProducts">$30.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column container">
+      <img src="pics/bottles.jpg" alt="Snow" style="width:60%" class ="center image">
+      <div class="middle">
+        <div><!-- where it starts-->
+          <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3"></script>
+  
+  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+  <button
+    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+    id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+    role="link"
+    type="button"
+  >
+    Checkout
+  </button>
+  
+  <div id="error-message"></div>
+  
+  <script>
+  (function() {
+    var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+  
+    var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+    checkoutButton.addEventListener('click', function () {
+      /*
+       * When the customer clicks on the button, redirect
+       * them to Checkout.
+       */
+      stripe.redirectToCheckout({
+        lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+        mode: 'payment',
+        /*
+         * Do not rely on the redirect to the successUrl for fulfilling
+         * purchases, customers may not always reach the success_url after
+         * a successful payment.
+         * Instead use one of the strategies described in
+         * https://stripe.com/docs/payments/checkout/fulfill-orders
+         */
+        successUrl: 'https://example.com/success',
+        cancelUrl: 'https://example.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          /*
+           * If `redirectToCheckout` fails due to a browser or network
+           * error, display the localized error message to your customer.
+           */
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  })();
+  </script>
+  </div>
+      </div>
+      <p class="paragraphProducts">Baby Mama</p>
+      <p class="paragraphProducts" style="font-size:20px">—</p>
+      <p class="paragraphProducts">$30.00</p>
+    </div>
+    <div class="column container">
+      <img src="pics/bottles.jpg" alt="Forest" style="width:60%" class ="center image">
+      <div class="middle">
+        <div><!-- where it starts-->
+          <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3"></script>
+  
+  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+  <button
+    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+    id="checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O"
+    role="link"
+    type="button"
+  >
+    Checkout
+  </button>
+  
+  <div id="error-message"></div>
+  
+  <script>
+  (function() {
+    var stripe = Stripe('pk_test_51It2XpHfb1gGtWjWWxskloTkYxSc1mAXTNzTqxfuIr6aakN2TjEjNeplgx9GTsaFCeYuLuTwTPFzsm2zHXDl1l1c00eeu2jNT7');
+  
+    var checkoutButton = document.getElementById('checkout-button-price_1It2ZCHfb1gGtWjWeBssb95O');
+    checkoutButton.addEventListener('click', function () {
+      /*
+       * When the customer clicks on the button, redirect
+       * them to Checkout.
+       */
+      stripe.redirectToCheckout({
+        lineItems: [{price: 'price_1It2ZCHfb1gGtWjWeBssb95O', quantity: 1}],
+        mode: 'payment',
+        /*
+         * Do not rely on the redirect to the successUrl for fulfilling
+         * purchases, customers may not always reach the success_url after
+         * a successful payment.
+         * Instead use one of the strategies described in
+         * https://stripe.com/docs/payments/checkout/fulfill-orders
+         */
+        successUrl: 'https://example.com/success',
+        cancelUrl: 'https://example.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          /*
+           * If `redirectToCheckout` fails due to a browser or network
+           * error, display the localized error message to your customer.
+           */
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  })();
+  </script>
+  </div>
+      </div>
+      <p class="paragraphProducts">Baby Daddy</p>
+      <p class="paragraphProducts" style="font-size:20px">—</p>
+      <p class="paragraphProducts">$30.00</p>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+  
+  <footer>
+    <span>Tipsy Taurus (C) All rights Reserved</span>
+  </footer>
+
+
+  <script type="text/javascript" src= "testing.js"> </script> 
+
+
+</body>
+</html>
+
+
